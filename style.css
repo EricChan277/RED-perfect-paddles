@@ -1,7 +1,32 @@
-html,
+
+@font-face {
+  font-family: "Karla-Regular";
+  src: url("./fonts/Karla-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karla-Italic";
+  src: url("./fonts/Karla-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karla-Bold";
+  src: url("./fonts/Karla-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karla-BoldItalic";
+  src: url("./fonts/Karla-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("./fonts/Pacifico.ttf") format("truetype");
+}
 
   p {
   font-size: 16px;
+
 }
 
 header {
@@ -16,16 +41,20 @@ header {
 
 headings {
   color:#646464;
+  font-family: Karla-BoldItalic;
 }
 
 body {
   font-size: 16px;
   color: #2d2d2d;
+  font-family: Karla-Regular;
 }
 
 button {
   background-color: #e2574c;
   border-radius: 12px;
+  font-size: 16px;
+  color: white;
 }
 
 button:hover {
