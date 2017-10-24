@@ -41,7 +41,7 @@ header {
 
 headings {
   color:#646464;
-  font-family: Karla-BoldItalic;
+  font-family: Pacifico;
 }
 
 body {
@@ -66,10 +66,12 @@ h1{
 }
 h2 {
   font-size: 20px;
+  font-family: Pacifico;
 }
 
 h3 {
   font-size: 18px;
+  font-family: Pacifico;
 }
 
 section {
