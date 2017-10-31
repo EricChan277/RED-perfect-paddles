@@ -29,14 +29,35 @@
 
 }
 
+.container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-box {
+  padding: 10px; 
+  background-color: black; 
+  border: black 2px solid;
+  width: fit-content;
+}
+
+nav {
+  background-color: black;
+}
 header {
   color: white;
   text-align: center;
-  margin: 0 auto;
   background-image: url('./images/kayak-bkgd.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 headings {
@@ -63,6 +84,7 @@ button:hover {
 
 h1{
   font-size: 40px;
+  font-family: Pacifico;
 }
 h2 {
   font-size: 20px;
@@ -71,16 +93,14 @@ h2 {
 
 h3 {
   font-size: 18px;
-  font-family: Pacifico;
+  
 }
 
 section {
   text-align: center;
 }
 
-.container {
-  width: 1140px;
-}
+
 
 article {
   text-align: left;
@@ -91,6 +111,26 @@ footer {
   color: white;
   text-align: center;
 }
+
+info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: flex-start;
+  right: 0;
+}
+
+socials {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  align-content: flex-end;
+  left: 0;
+
+}
+
 
 /*.TableText{
   width: 570px;
