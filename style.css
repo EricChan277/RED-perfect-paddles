@@ -45,7 +45,10 @@
 
 nav {
   background-color: black;
+  display: flex;
+
 }
+
 header {
   color: white;
   text-align: center;
@@ -107,28 +110,27 @@ article {
 }
 
 footer {
-  background-color: darkgrey;
+  background-color: black;
   color: white;
-  text-align: center;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  align-content: flex-start;
-  right: 0;
+  padding-left: 44px;
+  align-content: center;
 }
 
 socials {
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
-  align-content: flex-end;
-  left: 0;
+  padding-right: 44px;
+  align-content: center;
+}
 
+.images {
+  justify-content: space-between;
+  flex: 0 1 32%;
 }
 
 
