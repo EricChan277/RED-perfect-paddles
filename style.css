@@ -30,7 +30,6 @@
 }
 
 .container {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +45,15 @@
 nav {
   background-color: black;
   display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+}
 
+topRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 header {
@@ -65,13 +72,13 @@ header {
 
 headings {
   color:#646464;
-  font-family: Pacifico;
+  font-family: Pacifico, Arial;
 }
 
 body {
   font-size: 16px;
   color: #2d2d2d;
-  font-family: Karla-Regular;
+  font-family: Karla-Regular, Arial;
 }
 
 button {
@@ -81,17 +88,18 @@ button {
   color: white;
 }
 
+
 button:hover {
   background-color:#b64036;
 }
 
 h1{
   font-size: 40px;
-  font-family: Pacifico;
+  font-family: Pacifico, Arial;
 }
 h2 {
   font-size: 20px;
-  font-family: Pacifico;
+  font-family: Pacifico, Arial;
 }
 
 h3 {
@@ -126,13 +134,21 @@ info {
 socials {
   padding-right: 44px;
   align-content: center;
+  color: white;
 }
+
 
 .images {
   justify-content: space-between;
   flex: 0 1 32%;
 }
 
+.location { 
+  text-align: center;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
 
 /*.TableText{
   width: 570px;
