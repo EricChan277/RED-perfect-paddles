@@ -24,6 +24,36 @@
   src: url("./fonts/Pacifico.ttf") format("truetype");
 }
 
+@media screen and (min-width:600px) {
+  
+  .container {
+    display: flex;
+  }
+  
+  article {
+  width: 58.33%
+  }
+  
+  aside {
+  width: 37.5%;
+  }
+}
+
+@media screen and (min-width:1140px) {
+  .container {
+    max-width: 3840px;
+    display: flex;
+   }
+  
+  
+  article {
+  width: 98%
+  }
+  
+  aside {
+  width: 98%;
+  }  
+}
   p {
   font-size: 16px;
 
@@ -63,7 +93,8 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
+  width: 100%;
+  max-width: 3840px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,12 +140,14 @@ h3 {
 
 section {
   text-align: center;
+  align-items: 
 }
 
 
 
 article {
   text-align: left;
+  justify-content: space-between;
 }
 
 footer {
@@ -124,6 +157,25 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+table#prices {
+  width: 50%;  
+}
+
+table#prices tr:nth-child(1) {
+  background-color: #e6e6e6
+}
+
+}
 }
 
 info {
@@ -150,7 +202,3 @@ socials {
   flex-direction: column;
 }
 
-/*.TableText{
-  width: 570px;
-}
-*/
