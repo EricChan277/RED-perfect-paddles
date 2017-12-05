@@ -24,6 +24,26 @@
   src: url("./fonts/Pacifico.ttf") format("truetype");
 }
 
+#main[tabindex="-1"]:focus {
+   outline: 0;
+}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
+}
 @media screen and (min-width:600px) {
   
   .container {
@@ -33,7 +53,7 @@
   article {
   width: 58.33%
   }
-  
+  /*s*/
   aside {
   width: 37.5%;
   }
@@ -99,6 +119,8 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+ 
 }
 
 headings {
@@ -117,6 +139,7 @@ button {
   border-radius: 12px;
   font-size: 16px;
   color: white;
+  transition: all 0.1s ease 0.1s;
 }
 
 
@@ -140,7 +163,8 @@ h3 {
 
 section {
   text-align: center;
-  align-items: 
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -167,11 +191,12 @@ td {
   padding: 15px;
 }
 
-table#prices {
-  width: 50%;  
+table#pricesT {
+  width: 30%;  
+  align-self: flex-end;
 }
 
-table#prices tr:nth-child(1) {
+table#pricesT tr:nth-child(1) {
   background-color: #e6e6e6
 }
 
@@ -183,6 +208,9 @@ info {
   align-content: center;
 }
 
+ul {
+  list-style-type: none;
+}
 socials {
   padding-right: 44px;
   align-content: center;
@@ -195,6 +223,12 @@ socials {
   flex: 0 1 32%;
 }
 
+.prices {
+  text-align: center;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+}
 .location { 
   text-align: center;
   display: flex;
