@@ -27,6 +27,7 @@
 #main[tabindex="-1"]:focus {
    outline: 0;
 }
+
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -46,22 +47,21 @@
 }
 @media screen and (min-width:600px) {
   
-  .container {
-    display: flex;
-  }
+  /*<i class="fa fa-bars" aria-hidden="true"></i>*/
   
   article {
   width: 58.33%
   }
-  /*s*/
+
   aside {
   width: 37.5%;
   }
 }
 
 @media screen and (min-width:1140px) {
+  
   .container {
-    max-width: 3840px;
+    max-width: 1920px;
     display: flex;
    }
   
@@ -92,6 +92,11 @@
   width: fit-content;
 }
 
+.logo {
+  max-width: 180px;
+  max-height: auto;
+}
+
 nav {
   background-color: black;
   display: flex;
@@ -114,7 +119,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: 3840px;
+  max-width: 1920px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,6 +227,15 @@ socials {
   justify-content: space-between;
   flex: 0 1 32%;
 }
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 480px;
+  max-height: 320px;
+}
+
+
 
 .prices {
   text-align: center;
