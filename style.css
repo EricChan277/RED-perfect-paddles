@@ -46,19 +46,9 @@
   z-index: 100000;
 }
 
+
+
 @media screen and (min-width:600px) {
-  
-  
-  article {
-  width: 58.33%
-  }
-
-  aside {
-  width: 37.5%;
-  }
-}
-
-@media screen and (min-width:1140px) {
   
   .container {
     max-width: 1920px;
@@ -73,8 +63,35 @@
   aside {
   width: 98%;
   }  
+  
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    max-height: 320px;
+  }
 }
-  p {
+
+@media screen and (min-width:1140px) {
+  
+  
+  article {
+  width: 58.33%
+  }
+
+  aside {
+  width: 37.5%;
+  }
+  
+  .img {
+    width: 33%;
+    height: auto;
+    max-width: 480px;
+    max-height: 320px;
+  }  
+}
+
+p {
   font-size: 16px;
 
 }
@@ -88,6 +105,21 @@ a:hover {
   text-decoration: none;
   color: #b64036;
 }
+
+a:visited { 
+  color: white; 
+}
+
+.flexcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: flex-end;
+}
+     
 .container {
   display: flex;
   justify-content: center;
@@ -188,30 +220,8 @@ article {
   justify-content: space-between;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  height: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-table,
-th,
-td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 15px;
-}
 
-table#pricesT {
-  width: 30%; 
-}
-
-table#pricesT tr:nth-child(1) {
-  background-color: #e6e6e6
-}
 
 info {
   margin-left: 44px;
@@ -221,6 +231,11 @@ info {
 ul {
   list-style-type: none;
 }
+
+ul li{
+  display: inline;
+}
+
 socials {
   padding-right: 44px;
   align-content: center;
@@ -235,34 +250,68 @@ socials {
 }
 
 img {
-  width: 100%;
+  width: 33%;
   height: auto;
   max-width: 480px;
   max-height: 320px;
 }
 
+.rentalsBox {
+  display: flex;
+  flex: 0 1 32%;
+  justify-content: end;
+}
+
 .priceP {
-  max-width: 600px;
+  width: 50%;
   height: auto;
 }
 
-.prices {
-  text-align: center;
-  display: flex;
-  align-content: center;
-  flex-direction: row;
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  width : 50%;
+  height: auto;
+}
+
+table#pricesT {
+  width: 30%; 
+}
+
+table#pricesT tr:nth-child(1) {
+  background-color: #e6e6e6
+}
+
+table#pricesT:hover {
+  background-color: #fbf6d9;
 }
 
 .location { 
   text-align: center;
   display: flex;
-  align-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
+footer {
+  background-color: black;
+  color: white;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 socials,
 info {
   padding: 2em;
+  display: flex;
+  flex: 0 1 32%;
 }
 
 
