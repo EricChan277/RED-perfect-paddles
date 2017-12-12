@@ -43,11 +43,11 @@
   left: 5px;
   top: 5px;
   width: auto;
-  z-index: 100000; /* above all content */
+  z-index: 100000;
 }
+
 @media screen and (min-width:600px) {
   
-  /*<i class="fa fa-bars" aria-hidden="true"></i>*/
   
   article {
   width: 58.33%
@@ -79,6 +79,15 @@
 
 }
 
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #b64036;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -103,12 +112,13 @@ nav {
   justify-content: space-between;
   color: white;
   padding: 10px;
+  flex: 0 1 32%;
 }
 
-topRight {
+.menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header {
@@ -163,19 +173,18 @@ h2 {
 
 h3 {
   font-size: 18px;
-  
 }
 
 section {
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row; 
 }
 
-
-
 article {
+  display: flex;
   text-align: left;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -197,19 +206,15 @@ td {
 }
 
 table#pricesT {
-  width: 30%;  
-  align-self: flex-end;
+  width: 30%; 
 }
 
 table#pricesT tr:nth-child(1) {
   background-color: #e6e6e6
 }
 
-}
-}
-
 info {
-  padding-left: 44px;
+  margin-left: 44px;
   align-content: center;
 }
 
@@ -226,6 +231,7 @@ socials {
 .images {
   justify-content: space-between;
   flex: 0 1 32%;
+  
 }
 
 img {
@@ -235,7 +241,10 @@ img {
   max-height: 320px;
 }
 
-
+.priceP {
+  max-width: 600px;
+  height: auto;
+}
 
 .prices {
   text-align: center;
@@ -243,10 +252,18 @@ img {
   align-content: center;
   flex-direction: row;
 }
+
 .location { 
   text-align: center;
   display: flex;
   align-content: center;
   flex-direction: column;
 }
+
+socials,
+info {
+  padding: 2em;
+}
+
+
 
